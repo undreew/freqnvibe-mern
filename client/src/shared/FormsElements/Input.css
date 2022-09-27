@@ -1,0 +1,43 @@
+.form-control {
+	display: flex;
+	align-items: center;
+}
+
+.form-control label {
+	font-weight: 600;
+	font-size: 1.175rem;
+	flex: 0.3;
+}
+
+.form-control__input {
+	flex: 0.7;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-control__input input,
+.form-control__input textarea {
+	padding: 0.75rem 0.5rem;
+	font-weight: 500;
+	font-size: 1rem;
+	border-bottom: 2px solid var(--black);
+	background-color: var(--gray-variant);
+}
+
+.form-control__input textarea {
+	border: 2px solid var(--black);
+	resize: none;
+}
+
+.form-control__input input:focus,
+.form-control__input textarea:focus {
+	outline: none;
+	background: var(--white-pure);
+	border-color: var(--purple);
+}
+
+.form-control__invalid label,
+.form-control__invalid p {
+	color: var(--red);
+}

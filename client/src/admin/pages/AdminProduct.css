@@ -1,0 +1,11 @@
+.createproduct__form {
+	background-color: var(--white-pure);
+	color: var(--black);
+	max-width: 50rem;
+	margin: auto;
+	padding: 2rem 1.5rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}

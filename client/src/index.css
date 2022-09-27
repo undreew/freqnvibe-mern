@@ -1,0 +1,41 @@
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--white: #f4f4f4;
+	--white-pure: #fff;
+	--black: #171717;
+	--gray: #333;
+	--gray-variant: rgb(243, 243, 243);
+	--pink: #dd219e;
+	--purple: #510077;
+	--red: red;
+	--red-variant: #ffd1d1;
+	--danger: #830000;
+	--danger-variant: #f34343;
+	--disabled: #ccc;
+	--disabled-text: #979797;
+
+	--shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+
+	--transition: all 200ms ease-in;
+}
+
+body {
+	background: var(--white);
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+	/* object-fit: contain; */
+}
+
+.center {
+	text-align: center;
+}

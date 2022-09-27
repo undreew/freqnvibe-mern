@@ -1,0 +1,25 @@
+.editproduct {
+	max-width: 1300px;
+	margin: 1rem auto;
+	padding: 0 1rem;
+}
+
+.editproduct__form {
+	background-color: var(--white-pure);
+	color: var(--black);
+	max-width: 50rem;
+	margin: auto;
+	padding: 2rem 1.5rem;
+	box-shadow: var(--shadow);
+
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.form__actions {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 1rem;
+}

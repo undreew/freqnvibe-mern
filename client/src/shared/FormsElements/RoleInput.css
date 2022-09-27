@@ -1,0 +1,15 @@
+.form-control__input select {
+	background-color: var(--gray-variant);
+	border-bottom: 2px solid var(--black);
+	font-weight: 500;
+	font-size: 1rem;
+	flex: 0.7;
+}
+
+.form-control__input select:focus {
+	outline: none;
+}
+
+.form-control__input select:active {
+	outline: none;
+}

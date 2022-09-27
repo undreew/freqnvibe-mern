@@ -1,0 +1,53 @@
+.button {
+	text-decoration: none;
+	text-align: center;
+	background-color: var(--black);
+	border: 2px solid var(--black);
+	color: var(--white);
+	font-weight: 600;
+	font-size: 1.025rem;
+	padding: 0.65rem 4.5rem;
+	cursor: pointer;
+}
+
+.button__auth {
+	border-radius: 24px;
+	padding: 0.65rem 2rem;
+}
+
+.button:hover,
+.button:active {
+	background: var(--gray);
+}
+
+.button__inverse {
+	background: transparent;
+	border: 2px solid var(--black);
+	color: var(--black);
+}
+
+.button__inverse:hover,
+.button__inverse:active {
+	color: var(--white);
+	background: var(--black);
+	transition: var(--transition);
+}
+
+.button__danger {
+	background: var(--danger);
+	border-color: var(--danger);
+}
+
+.button__danger:hover,
+.button__danger:active {
+	background: var(--danger-variant);
+	border-color: var(--danger-variant);
+}
+.button:disabled,
+.button:hover:disabled,
+.button:active:disabled {
+	background: var(--disabled);
+	color: var(--disabled-text);
+	border-color: var(--disabled);
+	cursor: not-allowed;
+}

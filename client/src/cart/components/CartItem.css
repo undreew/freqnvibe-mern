@@ -1,0 +1,93 @@
+.cartitem {
+	width: 100%;
+	padding: 1rem;
+	margin-bottom: 8px;
+
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+	gap: 8px;
+	background-color: var(--white-pure);
+	border-radius: 2px;
+	place-items: center;
+}
+
+.cartitem__name {
+	text-decoration: none;
+	color: var(--black);
+}
+
+.cartitem__name:hover {
+	color: var(--pink);
+}
+
+.cartitem__select {
+	padding: 10px 17px;
+	border: 2px solid var(--black);
+}
+
+.cartitem__cutomize {
+	padding: 10px 17px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 1rem;
+}
+
+.cartitem__cutomize p {
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.cartitem__cutomize button {
+	padding: 0.215rem 0.415rem;
+	border: 2px solid var(--black);
+	border-radius: 4px;
+}
+
+.cartitem__deleteBtn {
+	padding: 10px 17px;
+	color: red;
+	background: var(--white);
+	border: 2px solid var(--black);
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+
+.cartitem__deleteBtn:hover,
+.cartitem__deleteBtn:focus,
+.cartitem__deleteBtn:active {
+	background-color: var(--black);
+	transform: scale(1.2);
+}
+
+@media screen and (max-width: 700px) {
+	.cartitem__name {
+		font-size: 0.8rem;
+	}
+
+	.cartitem__select,
+	.cartitem__deleteBtn {
+		padding: 8px 13px;
+	}
+
+	.cartitem__price {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.cartitem__name {
+		font-size: 0.6rem;
+	}
+
+	.cartitem__select,
+	.cartitem__deleteBtn {
+		padding: 5px 8px;
+	}
+
+	.cartitem__price {
+		font-size: 0.6rem;
+	}
+}
